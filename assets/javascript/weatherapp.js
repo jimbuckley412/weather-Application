@@ -1,5 +1,7 @@
+var api = "https://api.weather.gov"
+
 var citySearch = document.getElementsByClassName(containerCS);
-var cityData = document.getElementsByClassName(textareaCS);
+var cityName = document.getElementsByClassName(textareaCS);
 var tempText = document.getElementsByClassName(textareaT);
 var windText = document.getElementsByClassName(textareaW);
 var humidText = document.getElementsByClassName(textareaH);
@@ -10,15 +12,39 @@ var displayFiveDayC = document.getElementsByClassName(containerDC);
 var displayFiveDayD = document.getElementsByClassName(containerDD);
 var displayFiveDayE = document.getElementsByClassName(containerDE);
 
+fetch ('http://api.weather.gov', {
+  method: 'GET',
+  credentials: 'same-origin',
+  redirect: 'follow',
+  dataA: {
+    forcast_days: 0,
+    units: f,
+    callback: Function_Name,
+    percipitation,
+    hourly>temperature,
+    hourly>wind_speed,
+    hourly>humidity,
+  }
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (dataA) {
+      console.log(dataA);
+  })
+
+function displayTodayWeather(dataA) {
+  cityData.textContent = dataA[0].q;
+  
+}
+
 $.ajax({
-    url: 'https://api.weatherstack.com/forecast',
+    url: 'https://api.weather.gov',
     data: {
-      access_key: '65539ac03c3ef7f2e8495703442702b6',
-      query: "cityData",
       forecast_days: 5,
-      hourly: 1,
       units: f,
       callback: Function_Name,
+      percipitation,
       hourly>temperature,
       hourly>wind_speed,
       hourly>humidity,
@@ -30,9 +56,19 @@ $.ajax({
     function saveWeatherToStorage(Weathers) {
         localStorage.setItem('weathers',JSON.stringify(weathers));
     }
+    var weathers = readWeathersFromStorage();
+    
+    function printWeatherData(weathers) {
+      displayFiveDayA.textContent(0);
+      displayFiveDayB.textContent(1);
+      displayFiveDayC.textContent(2);
+      displayFiveDayD.textContent(3);
+      displayFiveDayE.textContent(4);
+    } 
 
-    function printWeatherData() {
-        tempText.empty();
-        var weathers = readWeathersFromStorage();
-        var 
-    }
+      for (var i = 0; i < weathers.length; i += 1)
+        var weather = weathers[i] { 
+          
+      }
+
+cityData.addEventListener('click',buttonClickHandler);

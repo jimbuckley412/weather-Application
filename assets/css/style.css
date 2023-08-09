@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background: linear-gradient(0deg, rgba(19,41,61,1) 0%, rgba(237,245,249,1) 63%);
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+  border-bottom:30px #879274;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1 {
+    width: 55vw;
+    height: 400px;
+}
+
+.containerCS {
+  flex: 0 auto;
+  padding: 8px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+h2 {
+  width: 55vw;
+  height: 400px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .topnav .search-container {
+    float: right;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @
+.containerCSS {
+  width: 30vw;
+  height: 400px;
+}
+
+.containerT {
+  background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,124,33,0.604079131652661) 100%);
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+  margin: auto;
+  padding: 20px;
+}
+
+h3 {
+    width: 55vw;
+    height: 400px;
+}
+
+h4 {
+    width: 55vw;
+    height: 400px;
+}
+
+.time-display {
+  height: 240px;
+  padding: 10px;
+  background: #13293d;
+  color: #fff;
+  text-align: center;
+}
+
+.timer-display-text {
+  padding: 55px;
+}
+
+h5 {
+    width: 55vw;
+    height: 400px;
+    color: red;
+}
+
+h6 {
+    width: 55vw;
+    height: 400px;
+    color: blue;
+}
+
+.h7 {
+    width: 55vw;
+    height: 400px;
+    color: yellow;
+}
+
+.containerWk {
+
+}
+
+.h8 {
+    width: 55vw;
+    height: 400px;
+}
+
+.containerDA {
+
+}
+
+.containerDB {
+
+}
+.containerDC {
+    
+}
+.containerDD {
+    
+}
+.containerDE {
+    
+}
+@media screen and (max-width: 1183px) {
+  main {
+    flex-direction: column;
+  }
+
+  .word-guess,
+  .results {
+    width: 90vw;
+  }
+
+  section {
+    background-color: white;
+    margin: 20px auto;
+    width: 92vw;
+  }
+}
+
+

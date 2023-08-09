@@ -23,65 +23,83 @@
     </header>
     <div class="containerCS">
         <h2> Search for a City</h2>
-        <div class='textareaCS'></div>
-        <div class="buttonCS"></div>
+        <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>        
         <div class="containerCSS"></div>
     </div>
     <div class="containerT">
         <h3>City Name</h3>
         <h4>
             Current Time &amp; Date: <br />
-            <span id="time-display"></span>
+            <span class ="timer-display" id="time-display-text"></span>
         </h4>
+        <div class="containerSD">
+        <div id="percipitation"></div>
         <h5>Temp:</h5>
-        <div class="textareaT"></div>
+        <div id="temperature"></div>
         <h6>Wind:</h6>
-        <div class="textareW"></div>
+        <div id="WindSpeed"></div>
         <h7>Humid:</h7>
-        <div class="textareaH"></div>
+        <div id="Humidity"></div>
+        </div>
     </div>
     <div class="containerWk">
         <h8>5-day Forcast</h8>
         <div class="containerDA">
+            <div id="percipitation"></div>
             <h5>Temp:</h5>
-            <div class="textareaT"></div>
+            <div id="temperature"></div>
             <h6>Wind:</h6>
-            <div class="textareW"></div>
+            <div id="WindSpeed"></div>
             <h7>Humid:</h7>
-            <div class="textareaH"></div>
+            <div id="Humidity"></div>
+            </div>
         </div>
         <div class="containerDB">
+            <div id="percipitation"></div>
             <h5>Temp:</h5>
-            <div class="textareaT"></div>
+            <div id="textareaT"></div>
             <h6>Wind:</h6>
-            <div class="textareW"></div>
+            <div id="textareW"></div>
             <h7>Humid:</h7>
-            <div class="textareaH"></div>
+            <div id="textareaH"></div>
         </div>
         <div class="containerDC">
+            <div id="percipitation"></div>
             <h5>Temp:</h5>
-            <div class="textareaT"></div>
+            <div id="textareaT"></div>
             <h6>Wind:</h6>
-            <div class="textareW"></div>
+            <div id="textareW"></div>
             <h7>Humid:</h7>
-            <div class="textareaH"></div>
+            <div id="textareaH"></div>
         </div>
         <div class="containerDD">
+            <div id="percipitation"></div>
             <h5>Temp:</h5>
-            <div class="textareaT"></div>
+            <div id="textareaT"></div>
             <h6>Wind:</h6>
-            <div class="textareW"></div>
+            <div id="textareW"></div>
             <h7>Humid:</h7>
-            <div class="textareaH"></div>
+            <div id="textareaH"></div>
         </div>
         <div class="containerDE">
-            <h5>Temp:</h5>
-            <div class="textareaT"></div>
-            <h6>Wind:</h6>
-            <div class="textareW"></div>
-            <h7>Humid:</h7>
-            <div class="textareaH"></div>
-        </div>
+          <div id="percipitation"></div>
+          <h5>Temp:</h5>
+          <div id="textareaT"></div>
+          <h6>Wind:</h6>
+          <div id="textareW"></div>
+          <h7>Humid:</h7>
+          <div id="textareaH"></div>
+      </div>
     </div>
     <script src="./javascript/script.js"></script>
     <script src="./javascript/weatherapp.js"></script>

@@ -21,20 +21,20 @@
     <header class="p-5">
       <h1>Weather Dash Board</h1>
     </header>
-    <div class="containerCS">
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="containerCS" id="cityContainer">
         <h2> Search for a City</h2>
-        <div class="topnav">
-          <a class="active" href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <div class="search-container">
+        <div class="search-container">
             <form action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
+              <input type="text" id="cityName" placeholder="city name" name="search">
+              <input type="text" id="zipCode" placeholder="zip code" name="search">
+              <button type="submit" id="citySearch"></button>
             </form>
-          </div>
         </div>        
-        <div class="containerCSS"></div>
     </div>
     <div class="containerT">
         <h3>City Name</h3>
@@ -47,9 +47,9 @@
         <h5>Temp:</h5>
         <div id="temperature"></div>
         <h6>Wind:</h6>
-        <div id="WindSpeed"></div>
+        <div id="windSpeed"></div>
         <h7>Humid:</h7>
-        <div id="Humidity"></div>
+        <div id="humidity"></div>
         </div>
     </div>
     <div class="containerWk">
@@ -101,7 +101,7 @@
           <div id="textareaH"></div>
       </div>
     </div>
-    <script src="./javascript/script.js"></script>
-    <script src="./javascript/weatherapp.js"></script>
+    <script src="./assets/js/timeDisplay.js"></script>
+    <script src="./assets/js/weatherApp.js"></script>
   </body>
 

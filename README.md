@@ -50,7 +50,9 @@ basic page no edits
 <CREDITS:> <h5 id="C5">Chapter 4</h5>
 <a href="https://www.freepik.com/free-vector/vector-black-white-retro-stamps-badges-isolated_10704966.htm#query=website%20badge&position=1&from_view=keyword&track=ais">Image by macrovector</a> on Freepik
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/
+
+https://open-meteo.com/en/docs#latitude=40.4079&longitude=-74.0343&hourly=temperature_2m,relativehumidity_2m,precipitation_probability,weathercode,windspeed_10m,is_day&daily=sunrise,sunset&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timeformat=unixtime&timezone=America%2FNew_York&models=best_match">Creative Commons Attribution 4.0 International License</a>.
 
 https://ca.indeed.com/career-advice/career-development/what-is-web-testing
 

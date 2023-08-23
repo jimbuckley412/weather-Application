@@ -1,5 +1,5 @@
 // API url
-var apiUrl = "https://api.weather.gov/zones/{type}/{zoneId}/forecast/?percipitation&hourly>temperature&hourly>wind_speed&hourly>humidity"
+var apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=40.4079&longitude=-74.0343&hourly=temperature_2m,relativehumidity_2m,precipitation_probability,weathercode,windspeed_10m,is_day&daily=sunrise,sunset&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timeformat=unixtime&timezone=America%2FNew_York&models=best_matchhttps://api.weather.gov/zones/{type}/{zoneId}/forecast/?percipitation&hourly>temperature&hourly>wind_speed&hourly>humidity"
 
 // variables needed for api call and display 1 day weather info 
 var cityContainer = document.getElementById('cityContainer');

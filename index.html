@@ -19,24 +19,23 @@
   </head>
   <body>
     <header class="p-5">
-      <h1>Weather Dash Board</h1>
+      <h1>Weather Dashboard</h1>
     </header>
-    <div class="topnav">
-      <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="containerCS" id="cityContainer">
+    <div class="left-side" id="left-side">
+      <div class="containerCS" id="cityContainer">
         <h2> Search for a City</h2>
         <div class="search-container">
-            <form action="/action_page.php">
-              <input type="text" id="cityName" placeholder="city name" name="search">
-              <input type="text" id="zipCode" placeholder="zip code" name="search">
-              <button type="submit" id="citySearch"></button>
-            </form>
+            <button type="button" class="btn btn-outline-secondary w-100 p-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search">
+                <path d="M11.354 10.646a5.5 5.5 0 10-7.778-7.778 5.5 5.5 0 007.778 7.778zM14 14a1 1 0 11-2 0 1 1 0 012 0z"></path>
+              </svg>
+              "Search for a City ..."
+            </button>
+          <div class="containerSR" id="searchResults"></div>
         </div>        
     </div>
-    <div class="containerT">
+    <div class="right-side" id="right-side">
+      <div class="containerT">
         <h3>City Name</h3>
         <h4>
             Current Time &amp; Date: <br />
@@ -48,19 +47,19 @@
         <div id="temperature"></div>
         <h6>Wind:</h6>
         <div id="windSpeed"></div>
-        <h7>Humid:</h7>
+        <.h7>Humid:</.h7>
         <div id="humidity"></div>
         </div>
-    </div>
-    <div class="containerWk">
-        <h8>5-day Forcast</h8>
+      </div>
+      <div class="containerWk">
+        <.h8>5-day Forcast</.h8>
         <div class="containerDA">
             <div id="percipitation"></div>
             <h5>Temp:</h5>
             <div id="temperature"></div>
             <h6>Wind:</h6>
             <div id="WindSpeed"></div>
-            <h7>Humid:</h7>
+            <.h7>Humid:</.h7>
             <div id="Humidity"></div>
             </div>
         </div>
@@ -70,7 +69,7 @@
             <div id="textareaT"></div>
             <h6>Wind:</h6>
             <div id="textareW"></div>
-            <h7>Humid:</h7>
+            <.h7>Humid:</.h7>
             <div id="textareaH"></div>
         </div>
         <div class="containerDC">
@@ -79,7 +78,7 @@
             <div id="textareaT"></div>
             <h6>Wind:</h6>
             <div id="textareW"></div>
-            <h7>Humid:</h7>
+            <.h7>Humid:</.h7>
             <div id="textareaH"></div>
         </div>
         <div class="containerDD">
@@ -88,7 +87,7 @@
             <div id="textareaT"></div>
             <h6>Wind:</h6>
             <div id="textareW"></div>
-            <h7>Humid:</h7>
+            <.h7>Humid:</.h7>
             <div id="textareaH"></div>
         </div>
         <div class="containerDE">
@@ -97,11 +96,16 @@
           <div id="textareaT"></div>
           <h6>Wind:</h6>
           <div id="textareW"></div>
-          <h7>Humid:</h7>
+          <.h7>Humid:</.h7>
           <div id="textareaH"></div>
       </div>
     </div>
+  </div>
+    <footer class="p-5">
+      <h2>Footer</h2>
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/timeDisplay.js"></script>
     <script src="./assets/js/weatherApp.js"></script>
+    <script src="./assets/js/Location.js"></script>
   </body>
 

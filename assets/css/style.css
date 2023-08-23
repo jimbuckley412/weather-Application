@@ -22,6 +22,15 @@ header {
   border-bottom:30px #879274;
 }
 
+.left-side {
+  flex: 1 0 0;
+  flex-direction: column;
+  padding: 8px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +55,7 @@ h2 {
   width: 23vw;
   height: 35px;
 }
+
 .topnav {
     width: auto;
     height: 34px;
@@ -53,11 +63,12 @@ h2 {
     background-color: #e9e9e9;
   }
   
-  .topnav a.active {
+.topnav a.active {
     background-color: #2196F3;
     color: white;
 }
-  .topnav a {
+
+.topnav a {
     float: left;
     display: block;
     color: black;
@@ -65,22 +76,23 @@ h2 {
     padding: 7px 8px;
     text-decoration: none;
     font-size: 14px;
-  }
+}
   
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
   
-  .button {
+.button {
     font-size: 14px;
     display: block;
     background-color: green;
     color: black;
     text-align: center;
     padding: 5px 6px;
-  }
-  .topnav .search-container {
+}
+
+.topnav .search-container {
     float: right;
   }
   
@@ -106,10 +118,18 @@ h2 {
     background: #ccc;
   }
   
-  @
-.containerCSS {
+.containerSR {
   width: 30vw;
   height: 400px;
+}
+
+.right-side {
+  flex: 1 0 0;
+  flex-direction: column;
+  padding: 8px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
 }
 
 .containerT {
@@ -163,7 +183,11 @@ h6 {
 }
 
 .containerWk {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30vw;
+    height: 150px;
 }
 
 .h8 {
